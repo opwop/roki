@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <title>Roki a vörös arc ellen</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Comfortaa', cursive;
+            background-color: #f9f9f9;
+        }
+
+        .page {
+            height: 100vh;
+        }
+
+        .girl {
+            left: 0;
+            right: 0;
+            bottom: -50vh;
+            position: fixed;
+            margin: 0 auto;
+            height: 93vh;
+        }
+
+        .box {
+            max-width: 310px;
+            left: 0;
+            right: 0;
+            margin: 10vh auto;
+        }
+
+        .textbox {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 1;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
+        .red {
+            border-left: 10px solid #C1272D;
+            border-right: 10px solid #C1272D;
+            background-color: #C1272D;
+            color: white;
+            font-weight: 900;
+        }
+
+        .bag {
+            left: 0;
+            right: 0;
+            bottom: 3vh;
+            position: absolute;
+            margin: 0 auto;
+            height: 48vh;
+        }
+
+        .mouth {
+            left: 0;
+            right: 0;
+            bottom: 15vh;
+            position: fixed;
+            margin: 0 auto;
+            height: 2vh;
+            transition: all 1s;
+        }
+
+        .smile {
+            left: 0;
+            right: 0;
+            bottom: 15.5vh;
+            position: fixed;
+            margin: 0 auto;
+            height: 2vh;
+            transform: scaleY(-1);
+            transition: all 1s;
+        }
+
+        .pulse {
+            display: block;
+            width: 17vh;
+            height: 7vh;
+            border-radius: 50%;
+            background: #c1272d61;
+            box-shadow: 0 0 0 rgba(193, 39, 45, 0.4);
+            animation: pulse 2s infinite;
+            left: 0;
+            right: 0;
+            bottom: 17vh;
+            position: fixed;
+            margin: 0 auto;
+            transition: all 1s;
+        }
+
+        .hide {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        @-webkit-keyframes pulse {
+            0% {
+                -webkit-box-shadow: 0 0 0 0 rgb(193, 39, 45, 0.4);
+            }
+
+            70% {
+                -webkit-box-shadow: 0 0 0 5vh rgb(193, 39, 45, 0);
+            }
+
+            100% {
+                -webkit-box-shadow: 0 0 0 0 rgb(193, 39, 45, 0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                -moz-box-shadow: 0 0 0 0 rgb(193, 39, 45, 0.4);
+                box-shadow: 0 0 0 0 rgb(193, 39, 45, 0.4);
+            }
+
+            70% {
+                -moz-box-shadow: 0 0 0 5vh rgb(193, 39, 45, 0);
+                box-shadow: 0 0 0 5vh rgb(193, 39, 45, 0);
+            }
+
+            100% {
+                -moz-box-shadow: 0 0 0 0 rgb(193, 39, 45, 0);
+                box-shadow: 0 0 0 0 rgb(193, 39, 45, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div data="1" class="page">
+            <img class="girl" src="/img/girl.png">
+            <img id="mouth" class="mouth" src="/img/mouth.png" alt="">
+            <div id="pulse"><span class="pulse"></span></div>
+            <div class="box">
+                <h3>Mi abban segítünk neked, hogy</h3>
+                <p class="textbox">többet ne legyen <span class="red">vörös</span> az arcod!</p>
+            </div>
+            <img src="/img/bag.png" alt="" class="bag">
+
+        </div>
+        <div data="2" class="page">
+            <div class="box">
+                <p class="textbox">A probléma</p>
+                <h3>az, hogy a gyulladt, vörös arc nem is az ember bőrét támadja, hanem az <span
+                        class="red">önbizalmát</span>. Attól fosztja meg, hogy emelt fővel sétálhasson az utcán.</h3>
+            </div>
+        </div>
+        <div data="3" class="page">
+            <div class="box">
+                <p class="textbox">Unod már,</p>
+                <h3>hogy az emberek egytől egyig <span class="red">sajnálnak</span>? Pedig te egy ember vagy és nem csak
+                    egy gyulladt vörös bőr?</h3>
+            </div>
+        </div>
+        <div data="4" class="page">
+            <div class="box">
+                <p class="textbox">Nem akarod újra átélni,</p>
+                <h3>hogy a másik beszélgetés közben a szemkontaktus helyett a <span class="red">vörös foltjaidat</span>
+                    pásztázza?</h3>
+            </div>
+        </div>
+        <div data="5" class="page">
+            <div class="box">
+                <p class="textbox">A kudarc fő oka, hogy</p>
+                <h3>a legtöbb varázslatos „csodaszer” csak pénzlehúzás. Ezáltal <span class="red">kísérletezni
+                        drága</span>
+                    mulatság és kockázatos. Honnan lehet tudni, melyik fog beválni és melyik nem?</h3>
+            </div>
+        </div>
+        <div data="6" class="page">
+            <div class="box">
+                <p class="textbox">Mi azt ígérjük Neked,</p>
+                <h3>hogy ha bevállalsz 4 olyan éjszakát, ami kicsit eltér a megszokottól, akkor <span class="red">ki
+                        tudjuk
+                        deríteni</span>
+                    , hogy ez a krém-e a megoldás a Te problémádra is.</h3>
+            </div>
+        </div>
+        <div data="7" class="page">
+            <div class="box">
+                <p class="textbox">Azok a vevőink,</p>
+                <h3>akik kipróbálták ezt a <span class="red">gyulladáscsökkentő</span> krémet, mind arról számoltak
+                    be, hogy már 48 óra múlva látták a változást a tükörben. Mára pedig már el is felejtetteék milyen az,
+                    amikor az ember nem akar emberek közé menni.</h3>
+            </div>
+        </div>
+        <div>ddd</div>
+    </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        var myScrollFunc = function () {
+            var y = window.scrollY;
+            var z = document.documentElement.scrollHeight;
+            if (y <= z - (z / 4)) {
+                document.getElementById("pulse").className = "pulse show";
+                document.getElementById("mouth").className = "mouth"
+            } else {
+                document.getElementById("pulse").className = "pulse hide";
+                document.getElementById("mouth").className = "smile"
+            }
+        };
+
+        window.addEventListener("scroll", myScrollFunc);
+    </script>
+
+</body>
+
+</html>
