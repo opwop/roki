@@ -19,16 +19,16 @@
         }
 
         .page {
-            height: 100vh;
+            min-height: 90vh;
         }
 
         .girl {
             left: 0;
             right: 0;
-            bottom: -50vh;
+            bottom: -2vh;
             position: fixed;
             margin: 0 auto;
-            height: 88vh;
+            height: 42vh;
         }
 
         .box {
@@ -155,6 +155,15 @@
                 left: 0;
             }
         }
+
+        .panel-title {
+            margin: 1em 0;
+            display: list-item;
+        }
+
+        .panel-collapse {
+            margin: 1em 0px 1em 1em;
+        }
     </style>
 </head>
 
@@ -162,7 +171,7 @@
 
     <div class="container-fluid">
 
-        <div data="1" class="page">
+        <div id="1" class="page">
             <img class="girl" src="img/girl.png">
             <img id="mouth" class="mouth" src="img/mouth.png" alt="">
             <div id="pulse"><span class="pulse"></span></div>
@@ -173,28 +182,28 @@
             <img src="img/bag.png" alt="" class="bag">
 
         </div>
-        <div data="2" class="page">
+        <div id="2" class="page">
             <div class="box">
                 <p class="textbox">A probléma</p>
                 <h3>az, hogy a gyulladt, vörös arc nem is az ember bőrét támadja, hanem az <span
                         class="red">önbizalmát</span>. Attól fosztja meg, hogy emelt fővel sétálhasson az utcán.</h3>
             </div>
         </div>
-        <div data="3" class="page">
+        <div id="3" class="page">
             <div class="box">
                 <p class="textbox">Unod már,</p>
                 <h3>hogy az emberek egytől egyig <span class="red">sajnálnak</span>? Pedig te egy ember vagy és nem csak
                     egy gyulladt vörös bőr?</h3>
             </div>
         </div>
-        <div data="4" class="page">
+        <div id="4" class="page">
             <div class="box">
                 <p class="textbox">Nem akarod újra átélni,</p>
                 <h3>hogy a másik beszélgetés közben a szemkontaktus helyett a <span class="red">vörös foltjaidat</span>
                     pásztázza?</h3>
             </div>
         </div>
-        <div data="5" class="page">
+        <div id="5" class="page">
             <div class="box">
                 <p class="textbox">A kudarc fő oka, hogy</p>
                 <h3>a legtöbb varázslatos „csodaszer” csak pénzlehúzás. Ezáltal <span class="red">kísérletezni
@@ -202,26 +211,262 @@
                     mulatság és kockázatos. Honnan lehet tudni, melyik fog beválni és melyik nem?</h3>
             </div>
         </div>
-        <div data="6" class="page">
+        <div id="6" class="page">
             <div class="box">
                 <p class="textbox">Mi azt ígérjük Neked,</p>
-                <h3>hogy ha bevállalsz 4 olyan éjszakát, ami kicsit eltér a megszokottól, akkor <span class="red">ki
+                <h3>hogy ha bevállalsz 4 egymást követő olyan éjszakát, ahol egy krémmel az arcodon alszol, akkor <span
+                        class="red">ki
                         tudjuk
                         deríteni</span>
                     , hogy ez a krém-e a megoldás a Te problémádra is.</h3>
+                <a class="typeform-share btn btn-info btn-block" href="https://medve.typeform.com/to/CHsSlE"
+                    data-mode="drawer_left" data-hide-headers=true data-hide-footer=true target="_blank">Kipróbálom</a>
             </div>
         </div>
-        <div data="7" class="page">
+        <div id="7" class="page">
             <div class="box">
                 <p class="textbox">Azok a vevőink,</p>
                 <h3>akik kipróbálták ezt a <span class="red">gyulladáscsökkentő</span> krémet, mind arról számoltak
                     be, hogy már 48 óra múlva látták a változást a tükörben. Mára pedig már el is felejtetteék milyen
                     az,
                     amikor az ember nem akar emberek közé menni.</h3>
+                <a class="typeform-share btn btn-info btn-block" href="https://medve.typeform.com/to/CHsSlE"
+                    data-mode="drawer_left" data-hide-headers=true data-hide-footer=true target="_blank">Kipróbálom</a>
+                <a class="btn btn-light btn-block btn-sm"
+                    onclick="document.getElementById(8).scrollIntoView({behavior: 'smooth'})" role="button">Kérdésem
+                    van</a>
             </div>
         </div>
-        <div>ddd</div>
-    </div>
+        <div id="8" class="page">
+            <div class="box">
+                <p class="textbox">Kérdésed van?</p>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            <h5 class="panel-title">
+                                <p>Hogyan és mennyi ideig kell használnom?</p>
+                            </h5>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <h8>Amikor előjön a vörösség az arcodon, aznap este már kezdd el használni. <br><br>
+                                <span class="red">1. nap. Kend be vastagon a vörös részeket</span> és bár ez nem egy
+                                pakolás, inkább ahhoz hasonlít a használata, mert egy egész éjszakája van rá, hogy
+                                teljesen beszívódjon. Ezért ne aggódj, ha felkenéskor még úgy érzed, hogy egy réteg
+                                maradt a bőrödön, pont ez fogja megoldani a problémádat. Fontos, hogy ne mosd le, amíg
+                                te éjszaka alszol, a krém dolgozik. <br><br>
+                                <span class="red">2. nap. Reggel a megszokott arctisztítási folyamatodnak megfelelően
+                                    járj</span> el bátran (mosd le, radírozd, tonikozd, stb.), azonban most napközben ne
+                                használj más krémet. Este, lefekvés előtt ismételd meg a krém felkenését… igen, ma is
+                                vastagon!<br><br>
+                                <span class="red">3. nap. Reggel már látható változáson</span> fog keresztül menni az
+                                arcbőröd és hálás lesz az elmúlt két éjszaka gondoskodásáért. Ismételd meg az első és
+                                második napot és el is felejtheted a vörös arcot egy időre! <br><br>
+                                Ezt a sok-sok infót természetesen nem kell megjegyezned, a krém dobozában is lesz egy
+                                pontos leírás! ;) <br><br>
+                            </h8>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            <h5 class="panel-title">
+                                <p>Milyen gyakran kell használnom?</p>
+                            </h5>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse in">
+                            <h8>Az egyik legjobb hírünk, hogy erre egyáltalán nem kell figyelned, mert ez a krém nem
+                                folyamatos használatra lett kitalálva, pont azért, hogy ne ezzel kelljen állandóan
+                                foglalkoznod. Bőven elég, ha akkor nyitod ki a kis tégelyt, ha előjön a vörösség vagy
+                                elkezd viszketni, égni az arcod.</h8>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            <h5 class="panel-title">
+                                <p>Mennyi idő után használ?</p>
+                            </h5>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse in">
+                            <h8>Két napra van szüksége ahhoz, hogy megismerje a bőrödet és már tudja kezelni, ezért ha
+                                adsz neki 2 éjszakát, akkor már a harmadik reggelen boldogabban mosolyoghatsz a tükörbe.
+                                A teljes hatását plusz 2 éjszaka után fejti ki, ekkor már el is búcsúzhatsz a
+                                vörösségtől és a krémtől is egy időre!</h8>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                            <h5 class="panel-title">
+                                <p>Miért éjszaka kell használni?</p>
+                            </h5>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse in">
+                            <h8>Két oka is van.<br><br>1. Vannak olyan összetevők és vitaminok, amiknek nem tesz jót az
+                                UV, ezért nappali használatuk során nem tudnak elég hatékonyak lenni, míg éjszaka
+                                nyugodtan dolgozhatnak. <br><br>2. Mert így kényelmes. Nem zavarja a sminket, senki nem
+                                látja, hogy krém csillog a bőrödön és a muslicák sem ragadnak bele.</h8>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                            <h5 class="panel-title">
+                                <p>Milyen állaga van?</p>
+                            </h5>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse in">
+                            <h8>Elég vizes típusú, ezért nem a kellemetlenül zsíros krémek családjába tartozik, azonban
+                                nem is az azonnal beszívódó, gél állagú krém. Szóval kicsit a kettő között. Kényelmesen
+                                felvihető a bőrre és könnyen lemosható a kezedről. Finom, mi szeretjük. :)</h8>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                            <h5 class="panel-title">
+                                <p>Milyen illata van?</p>
+                            </h5>
+                        </div>
+                        <div id="collapse6" class="panel-collapse collapse in">
+                            <h8>Mivel ezt a krémet a gyulladt bőr gyors lenyugatatására kísérleteztük ki, így nem
+                                engedhettük meg magunknak azt a luxust, hogy csak az illatért beletegyünk valamit. Mi
+                                már szeretjük, de főleg azért talán, mert megoldja a problémánkat. Nincs semmi
+                                mesterséges illatanyag benne, ezért ne számíts egy fenyőerdőre vagy rózsaligetre, de nem
+                                is teljesen szagtalan. Pont jó!</h8>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                            <h5 class="panel-title">
+                                <p>Használhatom a krémet más testrészeken is?</p>
+                            </h5>
+                        </div>
+                        <div id="collapse7" class="panel-collapse collapse in">
+                            <h8>Ártani nem árt, de az arcbőrre lett kifejlesztve, ezért mi azt mondjuk, ne pazarold
+                                máshová!</h8>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                            <h5 class="panel-title">
+                                <p>Van benne bármilyen káros anyag (parabén, SLS, stb.) vagy amire allergiás lehetek?
+                                </p>
+                            </h5>
+                        </div>
+                        <div id="collapse8" class="panel-collapse collapse in">
+                            <h8>Nincs miért aggódnod, minden összetevője természetes és antiallergén, azonban ha
+                                allergiás vagy a diófélékre, akkor te biztos tudod, hogy használhatsz-e sheavajat. Ha
+                                annak használata neked valami miatt tiltott mag, akkor sajnos nem mi leszünk a
+                                megmentőd.</h8>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                            <h5 class="panel-title">
+                                <p>Meddig áll el?
+                                </p>
+                            </h5>
+                        </div>
+                        <div id="collapse9" class="panel-collapse collapse in">
+                            <h8>Direkt kis kiszerelésben áruljuk, hogy ezzel ne kelljen foglalkoznod, hiszen jóval
+                                hamarabb elfogy, minthogy erre gondolnál! A dobozon is rajta lesz a szavatosság, de
+                                átlag 1 évvel nyugodtan számolhatsz.</h8>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                            <h5 class="panel-title">
+                                <p>Akkor is használhatom, ha én férfi vagyok?
+                                </p>
+                            </h5>
+                        </div>
+                        <div id="collapse10" class="panel-collapse collapse in">
+                            <h8>Még szép!!! Sőt… képzeld, úgy kezdtünk bele a krém fejlesztésébe és forgalmazásába, hogy
+                                a csapat egyik fiútagja küzdött a vörösség problémájával! Persze ez már múlt idő! :)
+                                Szóval bátran használd!
+                            </h8>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+                            <h5 class="panel-title">
+                                <p>Gyerekek is használhatják?
+                                </p>
+                            </h5>
+                        </div>
+                        <div id="collapse11" class="panel-collapse collapse in">
+                            <h8>Persze! Nincs benne semmi olyan dolog, ami árthatna az ő bőrének, és mivel nem kell vele
+                                spórolni, bátran felkenheti magának ő is, ezt most nem tudja eltúlozni! :)</h8>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse12">
+                            <h5 class="panel-title">
+                                <p>Mi van, ha nekem nem működik?
+                                </p>
+                            </h5>
+                        </div>
+                        <div id="collapse12" class="panel-collapse collapse in">
+                            <h8>Picit szomorúak leszünk és elnézést kérünk, de semmi gond! Ha az ingyenes mintát
+                                próbáltad ki, akkor csak a véleményedet kérjük, hogy tovább fejleszthessük a terméket,
+                                te pedig ajándékozd el a maradékot egy barátodnak vagy szerettednek. Ha pedig
+                                megvásároltad tőlünk a krémet és mégsem vált be, akkor jelezd felénk és az elégedettségi
+                                garanciánknak megfelelően visszafizetjük az árát.</h8>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse13">
+                            <h5 class="panel-title">
+                                <p>Van benne szteroid?
+                                </p>
+                            </h5>
+                        </div>
+                        <div id="collapse13" class="panel-collapse collapse in">
+                            <h8>Nincs. Itt vitaminokra és növényekre bízzuk a feladatot.</h8>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse14">
+                            <h5 class="panel-title">
+                                <p>Mik az összetevői?
+                                </p>
+                            </h5>
+                        </div>
+                        <div id="collapse14" class="panel-collapse collapse in">
+                            <h8>Íme: Aqua, Caprylic Capric Triglycerid, Panthenol, Cetyl Alcohol, Glyceryl Stearate and
+                                Ceteareth-20 and Ceteareth 2, Cetyl Alcohol, Cetyl Palmitate, Propylenglycol,
+                                Niacinamide, Butyrospermum Parkii Butter, isopropyl Miristate, Oleo Europaea Oil, hom,
+                                Lactobacillus Ferment Lysate, Rosmarinus Officinalis Water, Phenoxyethanol and
+                                Ethylhexyl Glycerine,Ceramide, Xanthan Gum, EDTA</h8>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="9" class="page">
+                <div class="box">
+                    <h3><span class="red">Elérnél?</span><br>
+                        Elérsz a +3620 550 1111-es számon vagy írásban a bla@bla.hu-n.<br>
+                        - Kriszta</h3><br><br>
+                    <a class="typeform-share btn btn-info btn-block" href="https://medve.typeform.com/to/CHsSlE"
+                        data-mode="drawer_left" data-hide-headers=true data-hide-footer=true target="_blank">Kipróbálom
+                        🚀</a>
+                    <br><br>
+                    Ne felejts el mosolyogni! 😊
+                </div>
+            </div>
+
+        </div>
 
     </div>
     <!-- Optional JavaScript -->
@@ -250,6 +495,10 @@
 
         window.addEventListener("scroll", myScrollFunc);
     </script>
+
+
+    <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+
 
 </body>
 
