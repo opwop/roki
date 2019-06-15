@@ -165,6 +165,23 @@
             margin: 1em 0px 1em 1em;
         }
     </style>
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '881695818513283');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=881695818513283&ev=PageView&noscript=1" /></noscript>
 </head>
 
 <body>
@@ -457,7 +474,8 @@
                 <div class="box">
                     <h3><span class="red">Elérnél?</span><br>
                         Elérsz a +3620 550 1111-es számon vagy írásban:<br>
-                        <a class="btn btn-link btn-block btn-sm" role="button" href="mailto:hello@duhosmokus.hu">e-mail-t küldök!</a>
+                        <a class="btn btn-link btn-block btn-sm" role="button"
+                            href="mailto:hello@duhosmokus.hu">e-mail-t küldök!</a>
                         - Kriszta</h3><br><br>
                     <a class="typeform-share btn btn-info btn-block" href="https://medve.typeform.com/to/CHsSlE"
                         data-mode="drawer_left" data-hide-headers=true data-hide-footer=true target="_blank">Kipróbálom
